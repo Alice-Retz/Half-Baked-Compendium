@@ -48,7 +48,6 @@ export default function Compendium() {
 				setPokemons(pokemonList);
 			}
 			setLoading(false);
-			// setSort('');
 		}
 
 		getFilteredPokemon();
@@ -59,7 +58,7 @@ export default function Compendium() {
 		setLoading(true);
 		fetchSearchPokemon(searchName)
 			.then((searchedPokemons) => {
-				this.setState({ pokemons: searchedPokemons });
+				setPokemons(searchedPokemons);
 			})
 			.catch((error) => {})
 			.finally(() => {

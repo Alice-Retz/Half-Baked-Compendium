@@ -68,7 +68,7 @@ export const fetchFilteredPokemon = async (randomTypes) => {
 		`https://pokedex-alchemy.herokuapp.com/api/pokedex?type=${randomTypes}`
 	);
 	const pokemonData = await res.json();
-	console.log('pokemonData', pokemonData);
+
 	const filteredPokemon = pokemonData.results.map((pokemon) =>
 		pokeMunger(pokemon)
 	);
