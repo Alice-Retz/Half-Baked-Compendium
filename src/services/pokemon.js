@@ -36,17 +36,16 @@ export const fetchPokemon = async () => {
 	return pokemonList;
 };
 
-export const fetchSearchPokemon = (pokemonName) => {
+export const fetchSearchPokemon = async (pokemonName) => {
 	const lowerCaseName = pokemonName.toLowerCase();
-	return fetch(
+	const res = await fetch(
 		`https://pokedex-alchemy.herokuapp.com/api/pokedex?pokemon=${lowerCaseName}`
-	)
-		.then((data) => data.json())
-		.then((pokemonData) => {
-			const { results } = pokemonData;
-			const pokemonResults = results.map((pokemon) => pokeMunger(pokemon));
-			return pokemonResults;
-		});
+	);
+	const searchData = await res.json();
+	const pokemonResults = searchData.results.map((pokemon) =>
+		pokeMunger(pokemon)
+	);
+	return pokemonResults;
 };
 
 export const fetchTypes = async () => {
