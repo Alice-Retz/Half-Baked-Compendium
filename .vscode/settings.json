@@ -1,3 +1,23 @@
 {
-  "cSpell.words": ["Pokemons"]
+	"cSpell.words": ["Munger", "pokeball", "Pokemons", "pokename"],
+	"workbench.colorCustomizations": {
+		"activityBar.activeBackground": "#9758a9",
+		"activityBar.activeBorder": "#beb081",
+		"activityBar.background": "#9758a9",
+		"activityBar.foreground": "#e7e7e7",
+		"activityBar.inactiveForeground": "#e7e7e799",
+		"activityBarBadge.background": "#beb081",
+		"activityBarBadge.foreground": "#15202b",
+		"sash.hoverBorder": "#9758a9",
+		"statusBar.background": "#794688",
+		"statusBar.foreground": "#e7e7e7",
+		"statusBarItem.hoverBackground": "#9758a9",
+		"statusBarItem.remoteBackground": "#794688",
+		"statusBarItem.remoteForeground": "#e7e7e7",
+		"titleBar.activeBackground": "#794688",
+		"titleBar.activeForeground": "#e7e7e7",
+		"titleBar.inactiveBackground": "#79468899",
+		"titleBar.inactiveForeground": "#e7e7e799"
+	},
+	"peacock.color": "#794688"
 }
